@@ -1,5 +1,11 @@
 /* No Fear — landing page. Decisões em DESIGN.md. */
 
+/* fontes locais (OFL), subconjunto latino */
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/fonts/inter-400.woff2") format("woff2"); }
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font-display: swap; src: url("../assets/fonts/inter-600.woff2") format("woff2"); }
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font-display: swap; src: url("../assets/fonts/inter-700.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/fonts/jetbrains-mono-500.woff2") format("woff2"); }
+
 :root {
   --primary: #45694a;
   --primary-hover: #3a5a3e;
@@ -347,3 +353,39 @@ h3 { font-size: 1.25rem; line-height: 1.75rem; font-weight: 600; }
 .teeth { grid-template-columns: repeat(8, minmax(0, 1fr)); }
 .faq-wrap { align-items: start; }
 .footer-grid { align-items: start; }
+
+/* rodapé: links legais */
+.footer-base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--s100) var(--s300); }
+.legal-links { display: flex; flex-wrap: wrap; gap: var(--s300); }
+.legal-links a { padding: var(--s50) 0; transition: color 200ms var(--ease); }
+.legal-links a:hover { color: var(--primary-hover); text-decoration: underline; text-underline-offset: 4px; }
+.legal-links a:active { color: var(--primary); }
+.legal-links a[aria-current="page"] { color: var(--fg); font-weight: 600; }
+.site-footer-slim { padding: 0 0 var(--s300); }
+.site-footer-slim .footer-base { margin-top: 0; border-top: 0; }
+
+/* páginas internas */
+.back-link {
+  display: inline-flex; align-items: center; gap: var(--s75); padding: var(--s75) var(--s100);
+  border: 1px solid var(--line-strong); border-radius: var(--r-md); font-weight: 600; font-size: 0.875rem; line-height: 1.25rem;
+  transition: background-color 200ms var(--ease), transform 200ms var(--ease);
+}
+.back-link:hover { background: var(--panel); }
+.back-link:active { transform: scale(0.98); }
+.back-link .icon { width: 1.25rem; height: 1.25rem; }
+.icon-flip { transform: scaleX(-1); }
+
+.legal-body { max-width: 760px; padding-top: var(--s600); padding-bottom: var(--s800); display: grid; gap: var(--s200); }
+.legal-body h1 { margin-bottom: var(--s75); }
+.legal-body h2 { font-size: 1.5rem; line-height: 2rem; margin-top: var(--s300); }
+.legal-body p { color: var(--fg-muted); max-width: 680px; }
+.legal-body a { color: var(--primary-hover); text-decoration: underline; text-underline-offset: 3px; border-radius: var(--r-sm); }
+.legal-body a:hover { color: var(--primary); }
+.legal-alert { padding: var(--s200); background: var(--surface); border: 1px solid var(--warning); border-radius: var(--r-md); }
+.legal-body .legal-alert { color: var(--fg); }
+.legal-alert strong { color: var(--warning); }
+.legal-date { font: 500 0.875rem/1.25rem var(--mono); }
+
+.notfound-body { min-height: calc(100vh - var(--header-h)); display: grid; align-content: center; justify-items: start; gap: var(--s200); padding-top: var(--s700); padding-bottom: var(--s700); }
+.notfound-body .btn { margin-top: var(--s100); }
+.odonto, .assistant { align-content: start; }

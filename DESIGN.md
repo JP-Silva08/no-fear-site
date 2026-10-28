@@ -279,7 +279,7 @@ Inter para tudo que é texto e JetBrains Mono para rótulos técnicos, números 
 
 A escala só usa degraus do Tailwind: 14, 16, 18, 20, 24, 36, 48 e 60 px, cada um com o line height do degrau. Duas famílias de peso apenas: 400 para leitura e 600 e 700 para ação e título. Sem 900, sem itálico. Títulos grandes têm tracking negativo; rótulos mono têm tracking levemente positivo. O título do hero e o subtítulo têm largura máxima de 680 px, com quebras escolhidas por significado. Títulos usam `text-wrap: balance` e parágrafos `text-wrap: pretty` para nunca deixar uma palavra sozinha na última linha. Sem hífen no meio de frases.
 
-Fallback: `system-ui, "Segoe UI", sans-serif` e `ui-monospace, Consolas, monospace`. Ambas as fontes são abertas (licença OFL).
+As fontes são servidas pelo próprio site em `assets/fonts` (subconjunto latino, woff2), sem Google Fonts: só Inter 400, 600 e 700 e JetBrains Mono 500. Um peso novo exige um arquivo novo. Fallback: `system-ui, "Segoe UI", sans-serif` e `ui-monospace, Consolas, monospace`. Ambas as fontes são abertas (licença OFL).
 
 ## Layout
 

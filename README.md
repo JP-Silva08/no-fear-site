@@ -7,10 +7,13 @@ Site estático em HTML, CSS e JavaScript puros. Sem frameworks, sem build e sem 
 ## Estrutura
 
 ```
-index.html      página única
-css/style.css   estilos (mobile first)
-js/main.js      menu, entrada ao rolar, revelação da tagline e contato
-assets/         favicon, imagem de compartilhamento e ícones (Phosphor, licença MIT)
+index.html        landing page
+privacidade.html  política de privacidade (modelo para revisão jurídica)
+termos.html       termos de uso (modelo para revisão jurídica)
+404.html          página de erro do GitHub Pages
+css/style.css     estilos (mobile first)
+js/main.js        menu, entrada ao rolar, revelação da tagline e contato
+assets/           favicon, imagem de compartilhamento, ícones (Phosphor, MIT) e fontes (Inter e JetBrains Mono, OFL)
 DESIGN.md       sistema visual: cores, tipografia, espaçamento, raios, sombras e o que evitar
 ```
 
@@ -40,6 +43,12 @@ O número atual é genérico. Troque pelos dados reais antes de divulgar a pági
 
 A tela do sistema no hero usa nomes e horários fictícios e está rotulada como ilustrativa. A página não traz clientes, depoimentos nem métricas: quando houver dados reais, inclua na seção de produtos ou crie uma seção de provas.
 
+## Páginas legais
+
+`privacidade.html` e `termos.html` descrevem o site como ele funciona hoje (sem formulários, cookies ou análise de visitas), mas são modelos: os campos entre colchetes (razão social, CNPJ, foro, prazo de guarda) precisam ser preenchidos, e o texto deve passar por um advogado.
+
 ## Publicação
 
-GitHub Pages, branch `main`, pasta raiz.
+GitHub Pages, branch `main`, pasta raiz: https://jp-silva08.github.io/no-fear-site/
+
+O `404.html` usa caminhos absolutos com o prefixo `/no-fear-site/`. Se o site for para um domínio próprio, troque esse prefixo por `/`.

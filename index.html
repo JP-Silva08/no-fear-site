@@ -20,9 +20,8 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap">
+  <link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -255,7 +254,7 @@
           </details>
           <details>
             <summary>Como falo com vocês?<svg class="icon" aria-hidden="true"><use href="#i-caret-down"/></svg></summary>
-            <p>Pelo WhatsApp ou por e-mail. Os dois contatos estão no fim desta página.</p>
+            <p>Pelo WhatsApp ou por email. Os dois contatos estão no fim desta página.</p>
           </details>
         </div>
       </div>
@@ -298,6 +297,10 @@
     </div>
     <div class="container footer-base">
       <p>© <span id="ano">2026</span> No Fear. Todos os direitos reservados.</p>
+      <nav class="legal-links" aria-label="Documentos">
+        <a href="privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos de uso</a>
+      </nav>
     </div>
   </footer>
 
